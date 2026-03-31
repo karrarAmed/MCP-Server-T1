@@ -1,0 +1,22 @@
+{
+  "name": "cal-com-mcp-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/stdio-server.js",
+  "scripts": {
+    "start": "node src/http-server.js",
+    "start:http": "node src/http-server.js",
+    "start:stdio": "node src/stdio-server.js",
+    "smoke:cal": "node scripts/smoke-cal.mjs"
+  },
+  "keywords": ["mcp", "cal.com", "scheduling"],
+  "author": "",
+  "license": "ISC",
+  "description": "MCP server for Cal.com scheduling (streamable HTTP + stdio)",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "zod": "^4.3.6"
+  }
+}
